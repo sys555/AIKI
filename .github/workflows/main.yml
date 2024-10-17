@@ -29,7 +29,8 @@ jobs:
       - name: Install poetry
         run: curl -sSL https://install.python-poetry.org | python3 -
       - name: Install project
-        run: make virtualenv; make install
+        # run: make virtualenv; make install
+        run: make switch-to-poetry
       - name: Show Enviornment
         run: make show
       - name: Run linter
